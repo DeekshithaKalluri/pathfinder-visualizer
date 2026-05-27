@@ -1,0 +1,11 @@
+{
+  "name": "Maze",
+  "rows": 25,
+  "cols": 25,
+  "start": [0, 0],
+  "end": [24, 24],
+  "terrain": {
+    "wall_rows": [4, 8, 12, 16, 20],
+    "gap_cols": [5, 15, 3, 18, 7]
+  }
+}
