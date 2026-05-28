@@ -16,7 +16,7 @@ A **systems-level pathfinding benchmarking tool** built with Python and Pygame. 
 
 ## 📸 Demo
 
-![Visualizer Demo](screenshots/Screenshot 2026-05-27 at 12.32.22 PM.png)
+![Visualizer Demo](screenshots/demo.png)
 
 ---
 
