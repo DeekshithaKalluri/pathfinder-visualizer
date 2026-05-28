@@ -135,4 +135,4 @@ Algorithms that use cost (A\*, Dijkstra, D\* Lite) will naturally route around m
 
 ## 📄 License
 
-MIT
+MIT — see [LICENSE](LICENSE)
