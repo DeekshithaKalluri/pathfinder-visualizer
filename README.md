@@ -1,4 +1,5 @@
 <div align="center">
+    
 # 🧭 Adaptive Pathfinding Visualizer
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
