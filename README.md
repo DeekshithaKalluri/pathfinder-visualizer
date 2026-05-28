@@ -1,3 +1,4 @@
+<div align="center">
 # 🧭 Adaptive Pathfinding Visualizer
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
@@ -8,6 +9,8 @@
 A **systems-level pathfinding benchmarking tool** built with Python and Pygame. Paint terrain, run algorithms, insert dynamic obstacles mid-search, and profile performance — all in real time.
 
 > Upgraded from [PathfindingProject](https://github.com/DeekshithaKalluri/PathfindingProject) (CIS 730 — AI course), which benchmarked 5 algorithms in Jupyter. This version adds a real-time interactive visualizer, weighted terrain, D* Lite replanning, and an automated performance profiler.
+
+</div>
 
 ---
 
@@ -66,6 +69,7 @@ python main.py
 
 ## 🏗️ Project Structure
 
+```
 pathfinder_visualizer/
 ├── main.py                  # Entry point, event loop
 ├── grid.py                  # Cell, terrain costs, grid logic
@@ -79,9 +83,10 @@ pathfinder_visualizer/
 ├── profiler/
 │   └── profiler.py          # Nodes, time, memory benchmarking
 └── configs/
-├── default.json          # Open grid preset
-├── maze.json             # Wall maze preset
-└── highway.json          # Highway + mud regions preset
+    ├── default.json          # Open grid preset
+    ├── maze.json             # Wall maze preset
+    └── highway.json          # Highway + mud regions preset
+```
 
 ---
 
@@ -97,9 +102,34 @@ pathfinder_visualizer/
 
 ---
 
+## 📈 What the Profiler Tracks
+
+Every time you run an algorithm, the profiler logs:
+
+- **Nodes visited** — how many cells were explored before finding the path
+- **Time (ms)** — wall-clock execution time using `perf_counter`
+- **Memory delta (KB)** — RSS memory change via `psutil`
+
+Press `P` in the app to print a full comparison table across all runs in the terminal.
+
+---
+
+## 🌍 Terrain Cost Model
+
+| Terrain | Color | Move Cost |
+|---------|-------|-----------|
+| Normal | Gray | 1 |
+| Mud | Brown | 5 |
+| Highway | Yellow | 0.5 |
+| Obstacle | Black | ∞ (impassable) |
+
+Algorithms that use cost (A\*, Dijkstra, D\* Lite) will naturally route around mud and prefer highways. BFS and DFS ignore cost entirely.
+
+---
+
 ## 🔗 Related
 
-- **Base project:** [PathfindingProject](https://github.com/DeekshithaKalluri/PathfindingProject) — Academic study of 5 pathfinding algorithms (CIS 730, AI course)
+- **Base project:** [PathfindingProject](https://github.com/DeekshithaKalluri/PathfindingProject) — Academic comparative study of 5 pathfinding algorithms (CIS 730, AI course). Includes full written report and statistical benchmarks across randomized grids.
 
 ---
 
