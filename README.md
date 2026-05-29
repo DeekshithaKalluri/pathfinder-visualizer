@@ -137,3 +137,7 @@ Algorithms that use cost (A\*, Dijkstra, D\* Lite) will naturally route around m
 ## 📄 License
 
 MIT — see [LICENSE](LICENSE)
+
+## 📚 References
+
+- Koenig, S. & Likhachev, M. (2002). **D\* Lite.** AAAI Conference on Artificial Intelligence. — Algorithm basis for the dynamic replanning implementation.
